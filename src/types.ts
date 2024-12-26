@@ -8,10 +8,10 @@ export interface Address {
 
 export interface User {
   id: string;
-  name: string;
+  name: string | null;
   email: string;
-  phone: string;
-  address: Address;
+  phone?: string;
+  address?: Address | null;
   company: string;
   jobTitle: string;
   avatar: string;
